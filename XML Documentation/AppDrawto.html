@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="C:\Users\sarit\AppData\Roaming\DocPreview\1.6.2.0\css/ContentsMerged.css" />
+    <title>Class GenericClass</title>
+</head>
+<body><p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Class AppDrawto</div>
+    <div id="Contents" />
+
+    
+ Represents the DrawTo command in the BOOSE drawing system.
+ This command stores the destination coordinates (X, Y).
+ The drawing operation is handled externally by the canvas or main form.
+ 
+        <div id='SectionHeader0' class='SectionHeader'>
+        <img id='SectionExpanderImg0' src='C:\Users\sarit\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' >
+        <span class='SectionHeader'>
+            <span class='ArrowCursor' >
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id='SectionContainerDiv0' class='SectionContainer'>
+    <table class='CodeTable'>
+    <colgroup><col width='100%'></colgroup>
+    <tbody><tr class='CodeTable'><th class='CodeTable'>C#</th></tr><tr class='CodeTable'><td class='CodeTable'><pre style='margin-left: 2px;'>
+    internal class AppDrawto : Command</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+</p><hr></hr><p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method Execute</div>
+    <div id="Contents" />
+
+    
+ Executes the DrawTo command.
+ The actual drawing is performed by the main application or canvas,
+ so this method simply completes successfully.
+ 
+        <div id='SectionHeader0' class='SectionHeader'>
+        <img id='SectionExpanderImg0' src='C:\Users\sarit\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' >
+        <span class='SectionHeader'>
+            <span class='ArrowCursor' >
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id='SectionContainerDiv0' class='SectionContainer'>
+    <table class='CodeTable'>
+    <colgroup><col width='100%'></colgroup>
+    <tbody><tr class='CodeTable'><th class='CodeTable'>C#</th></tr><tr class='CodeTable'><td class='CodeTable'><pre style='margin-left: 2px;'>
+    public override void Execute()</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+</p><hr></hr><p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method CheckParameters</div>
+    <div id="Contents" />
+
+    
+ Validates and stores parameters for the DrawTo command.
+ Expected format: DrawTo X, Y.
+ 
+        <div id='SectionHeader0' class='SectionHeader'>
+        <img id='SectionExpanderImg0' src='C:\Users\sarit\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' >
+        <span class='SectionHeader'>
+            <span class='ArrowCursor' >
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id='SectionContainerDiv0' class='SectionContainer'>
+    <table class='CodeTable'>
+    <colgroup><col width='100%'></colgroup>
+    <tbody><tr class='CodeTable'><th class='CodeTable'>C#</th></tr><tr class='CodeTable'><td class='CodeTable'><pre style='margin-left: 2px;'>
+    public override void CheckParameters(string[] parameters)</pre></td></tr></tbody></table>
+    
+    <div class='CommentHeader'>Parameters</div>
+<div class='CommentParameterName'>parameters</div><div class='ParameterCommentContainer'>
+Array of 2 parameters: X and Y.
+</div>
+
+    
+    
+    
+    
+<div id='SectionHeader1' class='SectionHeader'>
+   <img id='SectionExpanderImg1' src='C:\Users\sarit\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' /> 
+   <span class='SectionHeader'>
+       <span class='ArrowCursor'>
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id='SectionContainerDiv1' class='SectionContainer'>
+<table class='MembersTable'>
+<col width='25%' />
+<col width='75%' />
+<tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class='PseudoLink'>ArgumentException</span></td>
+<td>
+ Thrown if the number of parameters is incorrect or
+ if the provided parameters are not valid integers.
+ </td>
+</tr>
+</table
+</div>
+</div>
+
+    
+    
+
+</div>
+
+</p><hr></hr><p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method GetX</div>
+    <div id="Contents" />
+
+    
+ Gets the stored X coordinate for the DrawTo command.
+ 
+        <div id='SectionHeader0' class='SectionHeader'>
+        <img id='SectionExpanderImg0' src='C:\Users\sarit\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' >
+        <span class='SectionHeader'>
+            <span class='ArrowCursor' >
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id='SectionContainerDiv0' class='SectionContainer'>
+    <table class='CodeTable'>
+    <colgroup><col width='100%'></colgroup>
+    <tbody><tr class='CodeTable'><th class='CodeTable'>C#</th></tr><tr class='CodeTable'><td class='CodeTable'><pre style='margin-left: 2px;'>
+    public int GetX() =&gt; x</pre></td></tr></tbody></table>
+    
+    
+    <div class='CommentHeader'>Return Value</div>
+<div class='ParameterCommentContainer'>
+The X coordinate as an integer.
+</div>
+
+    
+    
+    
+    
+    
+
+</div>
+
+</p><hr></hr><p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method GetY</div>
+    <div id="Contents" />
+
+    
+ Gets the stored Y coordinate for the DrawTo command.
+ 
+        <div id='SectionHeader0' class='SectionHeader'>
+        <img id='SectionExpanderImg0' src='C:\Users\sarit\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' >
+        <span class='SectionHeader'>
+            <span class='ArrowCursor' >
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id='SectionContainerDiv0' class='SectionContainer'>
+    <table class='CodeTable'>
+    <colgroup><col width='100%'></colgroup>
+    <tbody><tr class='CodeTable'><th class='CodeTable'>C#</th></tr><tr class='CodeTable'><td class='CodeTable'><pre style='margin-left: 2px;'>
+    public int GetY() =&gt; y</pre></td></tr></tbody></table>
+    
+    
+    <div class='CommentHeader'>Return Value</div>
+<div class='ParameterCommentContainer'>
+The Y coordinate as an integer.
+</div>
+
+    
+    
+    
+    
+    
+
+</div>
+</p>
+</body>
+</html>
